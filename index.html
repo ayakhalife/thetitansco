@@ -1,0 +1,405 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>the titans co.</title>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+  <meta name="viewport" content="initial-scale=0.60, minimum-scale=0.60, maximum-scale=0.60">
+  <style>
+      @font-face {
+            font-family:'font1';
+            src: url('Dogma1.ttf') format('truetype');
+        }
+        @font-face {
+            font-family:'font2';
+            src: url('Acidic-Normal.ttf') format('truetype');
+        }
+    *,
+    body {
+      z-index: 0;
+      margin: 100px;
+      Color: white;
+      background: black;
+      
+    }
+
+    .container1 {
+      display: flex;
+      width: 100vw;
+      height: 30vh;
+      border: 1px solid blue;
+      
+    }
+    .container1:hover {
+      border: 1px solid orange;
+    }
+
+    .container2 {
+      display: flex;
+      width: 100vw;
+      height: 30vh;
+      border: 1px solid blue;
+    }
+    .container2:hover{
+      animation: disco 1s infinite;
+
+    }
+    @keyframes disco{
+      0% {
+        border: 1px solid blue;
+      }
+
+      50% {
+        border: 5px solid blue;
+      }
+      100% {
+        border: 5px dotted blue;
+      }
+    }
+    .container3 {
+      display: flex;
+      width: 100vw;
+      height: 30vh;
+      border: 1px solid blue;
+    }
+    .container3:hover{
+      animation: color 1s infinite;
+    }
+    @keyframes color{
+      from {
+        border:1px solid blue
+      }
+      to {
+        border: 1px solid orange;
+      }
+    }
+    .column1 {
+        width: 30px;
+        height: 30px;
+        background: white;
+        border-radius: 50%;
+      
+      
+    }
+
+   .column1:hover{
+        width: 100px;
+        height: 100px;
+        background: blue;
+        border: 3px dotted orange;
+      
+   }
+      
+    .column2 {
+
+      width: 30px;
+      height: 30px;
+      background: white;
+      border-radius: 50%;
+      font-size: 0px;
+
+    }
+
+    .column2:hover {
+      background: radial-gradient(blue, rgb(93, 93, 252));
+      width: 300px;
+      border-radius: 0%;
+      font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+      letter-spacing: 5px;
+      font-size: 20px;
+      text-align: center;
+      color: orange;
+
+    }
+
+  
+
+    .marquee {
+      font-family: monospace;
+      font-size: 15px;
+      color: orange;
+      letter-spacing: 5px;
+      padding:10px;
+      text-align:center;   
+      border: 1px solid blue;
+    }
+    .marquee:hover{
+      border:50px solid orange;
+    }
+    .column3 {
+      width: 30px;
+      height: 30px;
+      background: white;
+      border-radius: 50%;
+    }
+
+    .column3:hover {
+      background-image: url("2-2.png");
+      width: 700px;
+      height: 700px;
+      border-radius: 0%;
+      border: 3px solid orange;
+
+
+    }
+
+   .column4 {
+      width: 30px;
+      height: 30px;
+      background: white;
+      border-radius: 50%;
+      display: flex;
+      margin-top:-7px;
+      font-family:monospace;
+      align-items: center;
+      justify-content: center;
+      transition: opacity 6s, width 6s, height 6s, background 6s, font-size 6s;
+      box-sizing: border-box;
+      font-size: 2vw;
+      overflow: hidden; 
+      text-align: center;
+      border: 1px solid orange;
+    }
+       
+    .column4-hover:hover .column4 {
+        opacity: 1;
+        width: 50vw;
+        height: 50vh;
+        border: 1px solid blue;
+        background: blue;
+        font-size: 1.5vw;
+      }
+
+
+    .column5 {
+      width: 300px;
+      height: 300px;
+      margin-top:-7px;
+      background: white;
+      border-radius: 50%;
+      background-image: url("1-1.png");
+      border: 1px solid blue;
+
+    }
+
+    .column5:hover {
+      width: 300px;
+      height: 300px;
+      background-image: url("1-2.png")
+    }
+
+    .column6 {
+      width: 30px;
+      height: 30px;
+      background: white;
+      border-radius: 50%;
+      border: 1px solid orange;
+      color:transparent;
+      
+    
+    }
+    .column6:hover{
+      background:orange;
+      color:white;
+      font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+      font-size:20px;
+      width: 70px;
+      height: 70px;
+      overflow:hidden;
+      align-items: center;
+      justify-content: center;
+      padding-left:10px;
+      padding-top:10px;
+
+    }
+  a{
+    border: 1px solid orange;
+      width: 30px;
+      height: 30px;
+      background: white;
+      border-radius: 50%;
+    margin-left:-.1px;
+
+
+
+  }
+
+    .column7 {
+      width: 30px;
+      height: 30px;
+      background: white;
+      border-radius: 50%;
+      color: transparent;
+    }
+
+    .column7:hover {
+      color: orange;
+      font-size: 10px;
+      white-space: nowrap;
+      font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+      letter-spacing: 10px;
+      background: black;
+      border: none;
+    }
+
+    
+    p {
+      /* z-index: 2; */
+      white-space: nowrap;
+      /* border-right: .15em solid orange; */
+      margin: 0 auto;
+      color: orange;
+      font-family: monospace;
+      letter-spacing: .15em;
+      animation: typewriter 2s steps(13) infinite alternate;
+      /* border-right: 5px solid black; */
+    }
+  
+
+    @keyframes typewriter {
+      from {
+        width: 0%;
+      }
+
+      to {
+        width: 50%;
+      }
+    }
+
+  p:hover{
+      background-color: blue;
+    }
+
+    .column8 {
+      width: 30px;
+      height: 30px;
+      background: white;
+      border-radius: 50%;
+      color:transparent;
+      
+    }
+
+    .column8:hover {
+      width: 50px;
+      height: 50px;
+      background: transparent;
+      white-space:nowrap;
+      border-radius: 50%;
+      color:orange;
+      z-index:1;
+      font-size:100px;
+      margin:-20px;
+      /* text-align: center; */
+      font-family:'font2';
+      /* line-height: 100px; */
+    }
+
+    .column9 {
+      width: 30px;
+      height: 30px;
+      background: white;
+      border-radius: 50%;      
+    }
+
+    .column9:hover {
+      width: 400px;
+      height: 400px;
+      animation: image 7s forwards,
+                  size 3s forwards;
+ 
+      border: 1px solid blue;
+        }
+        @keyframes image {
+      from {
+            background-image: url("3-1.png");
+      }
+
+      to {
+        background-image: url("3-2.png");
+      }
+    }
+
+    @keyframes size {
+      from {width:30px;
+            height:30px;
+      }
+
+      to {width:400px;
+            height:400px;
+      }
+    }
+
+  
+      
+  </style>
+
+</head>
+
+<body>
+  <div class="container1">
+    
+      <div class="column1"></div>
+        
+      
+
+    <div class="column2"> 
+      ATLAS GROUP</div>
+
+    <div class="column3">
+   
+    </div>
+
+  </div>
+  <br>
+  <marquee class="marquee" direction="left" scrollamount="10">
+
+    MY GARDEN IS CLEARER THAN THE SKY</marquee>
+  <br>
+  <div class="container2">
+      <div class="column4-hover">
+      <div class="column4">
+        The Titan’s Co. has concentrated on researching and recording the festival of Madrid. To this end, it locates, preserves, studies, and produces audio, visual, literary, and other artifacts that relate to that event. 
+
+      </div>
+    </div>
+
+    <div class="column5">
+
+    </div>
+
+    <div class="column6"> CLICK ME!
+     <a href="insidepage.html">  
+    </a>
+    </div>      
+ 
+
+ </div>
+ 
+  <br>
+  <br>
+  <br>
+  <br>
+  <p>
+    The Titan’s Co. has concentrated on researching and recording the festival of Madrid.
+  </p>
+  <br>
+
+  <div class="container3">
+
+    <div class="column7">
+      THE TITAN'S CO
+    </div>
+
+    <div class="column8">
+      THE ATLAS GROUP
+
+    </div>
+
+    <div class="column9">
+
+
+    </div>
+  </div>
+</body>
+
+</html>
